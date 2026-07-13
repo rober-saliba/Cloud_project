@@ -47,20 +47,14 @@ The **Robotics Lab Monitoring Platform** is a data-driven system designed to mon
 * `pyspark_notebooks/`: Spark-based notebooks for MapReduce analysis and anomaly detection.
 * `docs/`: Technical reports and project documentation.
 
-## 💻 How to Run Locally
+## 💻 How to Run (Quick Start via Google Colab)
 
-1. **Firebase Configuration:**
-   Place your `serviceAccountKey.json` in the project root and update your `databaseURL` in the config file.
+The easiest way to run and test this project is directly through Google Colab—no local cloning or environment setup required!
 
-2. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/rober-saliba/Robotics-Lab-Monitoring-Platform.git](https://github.com/rober-saliba/Robotics-Lab-Monitoring-Platform.git)
-    ```
-3.Install Dependencies:
-    ```bash
-   pip install pyspark firebase-admin paho-mqtt
-    ```
+1. **Firebase Configuration:** Ensure you have your Firebase `serviceAccountKey.json` and `databaseURL` ready, as you will need them to connect the database.
+2. **Open the Notebook:** Click the button below to open the project directly in your browser:
+   
+   <a href="https://colab.research.google.com/drive/1zAiCCOvGcj_66eqPqtVkCJGDet_Redfr?usp=sharing" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-    
-4.Execute on Databricks:
-Import the notebooks to your Databricks Workspace to run the distributed Spark jobs.
+3. **Configure Setup:** Once inside the notebook, make sure to **set the run setup to `True`**.
+4. **Run the Project:** Execute the cells in the notebook. Colab will automatically handle the installation of necessary dependencies (like `pyspark`, `firebase-admin`, and `paho-mqtt`) and run the project!
